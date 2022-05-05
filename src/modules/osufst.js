@@ -1,5 +1,5 @@
 (function(hello) {
-	const auth_url = 'https://auth.osufst.org';
+	const auth_url = 'http://localhost:4202';
 
 	hello.init({
 		osufst: {
@@ -34,4 +34,4 @@
 		},
 	});
 
-});
+})(hello);
