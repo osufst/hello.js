@@ -16,6 +16,7 @@ import '../../../src/modules/github';
 import '../../../src/modules/bikeindex';
 import '../../../src/modules/soundcloud';
 import '../../../src/modules/vk';
+import '../../../src/modules/osufst';
 
 describe('E2E modules', function() {
 

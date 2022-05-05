@@ -40,6 +40,7 @@ cat hello.polyfill.js \
 	modules/instagram.js \
 	modules/joinme.js \
 	modules/linkedin.js \
+  modules/osufst.js \
 	modules/soundcloud.js \
 	modules/spotify.js \
 	modules/twitter.js \

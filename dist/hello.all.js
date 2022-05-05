@@ -1,4 +1,4 @@
-/*! hellojs v1.19.5 - (c) 2012-2021 Andrew Dodson - MIT https://adodson.com/hello.js/LICENSE */
+/*! hellojs v1.19.5 - (c) 2012-2022 Andrew Dodson - MIT https://adodson.com/hello.js/LICENSE */
 // ES5 Object.create
 if (!Object.create) {
 
@@ -5102,6 +5102,43 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 	}
 
 })(hello);
+(function(hello) {
+	const auth_url = 'https://auth.osufst.org';
+
+	hello.init({
+		osufst: {
+			name: 'OSU FST Auth',
+
+			oauth: {
+				version: 2,
+				auth: `${auth_url}/dialog/authorize`,
+				grant: `${auth_url}/oauth/token',`
+			},
+
+			// Authorization scopes
+			scope: {
+				basic: 'profile',
+			},
+
+			scope_delim: ' ',
+
+			login: () => {
+
+			},
+
+			// API base url
+			base: `${auth_url}/api/`,
+
+			get: {
+				me: 'userinfo',
+			},
+			wrap: {
+				me: () => {},
+			},
+		},
+	});
+
+});
 // See: https://developers.soundcloud.com/docs/api/reference
 (function(hello) {
 
