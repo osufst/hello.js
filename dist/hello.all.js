@@ -5103,7 +5103,7 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 
 })(hello);
 (function(hello) {
-	const auth_url = 'https://auth.osufst.org';
+	const auth_url = 'http://localhost:4202';
 
 	hello.init({
 		osufst: {
@@ -5138,7 +5138,7 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 		},
 	});
 
-});
+})(hello);
 // See: https://developers.soundcloud.com/docs/api/reference
 (function(hello) {
 
