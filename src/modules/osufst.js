@@ -8,7 +8,8 @@
 			oauth: {
 				version: 2,
 				auth: `${auth_url}/dialog/authorize`,
-				grant: `${auth_url}/oauth/token',`
+				grant: `${auth_url}/oauth/token',`,
+				response_type: 'code'
 			},
 
 			// Authorization scopes
@@ -16,7 +17,7 @@
 				basic: 'profile',
 			},
 
-			scope_delim: ' ',
+			scope_delim: ',',
 
 			login: () => {
 

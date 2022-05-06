@@ -5112,7 +5112,8 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 			oauth: {
 				version: 2,
 				auth: `${auth_url}/dialog/authorize`,
-				grant: `${auth_url}/oauth/token',`
+				grant: `${auth_url}/oauth/token',`,
+				response_type: 'code'
 			},
 
 			// Authorization scopes
@@ -5120,7 +5121,7 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 				basic: 'profile',
 			},
 
-			scope_delim: ' ',
+			scope_delim: ',',
 
 			login: () => {
 
